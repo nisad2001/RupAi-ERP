@@ -3,7 +3,10 @@ const Home = () => {
     <div>
       <div className='grid grid-cols-12 h-[1080px]'>
         {/* Left side */}
-        <div className="min-h-screen bg-[url('assets/home-img.png')] bg-cover bg-center bg-no-repeat col-span-7">
+        <div
+          className="min-h-screen bg-[url('assets/home-img.png')] bg-cover bg-center bg-no-repeat col-span-7"
+          style={{ backgroundImage: "url('/assets/home-img.png')" }}
+        >
           <div className='mt-20 ml-24'>
             <img src='assets/Rupai-logo.png' alt='Logo' />
             <p className='font-normal not-italic text-[14px] leading-[100%] tracking-[0%] text-[#1E1E1E]'>
