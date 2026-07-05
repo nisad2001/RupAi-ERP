@@ -39,33 +39,113 @@ const Home = () => {
               </p>
             </div>
 
+            {/* Responsive Grid Static */}
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center xl:justify-items-start gap-x-4 gap-y-[48px] px-6 md:ml-0 xl:ml-[112px] md:px-0 mb-[40px] md:mb-[60px] mx-auto xl:mx-0'>
-              {/* Leaf items */}
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                <div key={i} className='flex flex-col items-center w-[131px]'>
-                  <img
-                    src={`assets/leaf${i}.png`}
-                    className='w-[72px] h-[72px]'
-                    alt='leaf'
-                  />
-                  <p className='text-white pt-2 text-[14px] text-center'>
-                    Module {i}
-                  </p>
-                </div>
-              ))}
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf1.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-white pt-2 text-[14px] text-center'>
+                  Plantation Management
+                </p>
+              </div>
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf2.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-white pt-2 text-[14px] text-center'>
+                  Production Tracking
+                </p>
+              </div>
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf3.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-white pt-2 text-[14px] text-center'>
+                  Workforce Management
+                </p>
+              </div>
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf4.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-center text-white pt-2 text-[14px]'>
+                  Real-time Reports
+                </p>
+              </div>
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf5.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-white pt-2 text-[14px] text-center'>
+                  Inventory Control
+                </p>
+              </div>
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf6.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-white pt-2 text-[14px] text-center'>
+                  Accounts & Finance
+                </p>
+              </div>
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf7.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-white pt-2 text-[14px] text-center'>
+                  Sales & Auction
+                </p>
+              </div>
+              <div className='flex flex-col items-center w-[131px]'>
+                <img
+                  src='assets/leaf8.png'
+                  className='w-[72px] h-[72px]'
+                  alt='leaf'
+                />
+                <p className='text-white pt-2 text-[14px] text-center'>
+                  And More Modules
+                </p>
+              </div>
             </div>
           </div>
 
           <div className='bg-[#06470D] flex flex-col items-center justify-center w-full p-6 space-y-4 md:space-y-0 md:space-x-9 md:flex-row md:items-start'>
-            {[1, 2, 3].map((i) => (
-              <div key={i} className='flex items-center gap-[9px] text-white'>
-                <img src='assets/shield-check.png' alt='shield' />
-                <div className='text-center md:text-left'>
-                  <p className='text-[16px]'>Secure & Reliable</p>
-                  <p className='text-[12px]'>Your data is protected</p>
-                </div>
+            <div className='flex items-center gap-[9px] text-white'>
+              <img src='assets/shield-check.png' alt='shield' />
+              <div className='text-center md:text-left'>
+                <p className='text-[16px]'>Secure & Reliable</p>
+                <p className='text-[12px]'>Your data is protected</p>
               </div>
-            ))}
+            </div>
+            <div className='flex items-center gap-[9px] text-white'>
+              <img src='assets/shield-check.png' alt='shield' />
+              <div className='text-center md:text-left'>
+                <p className='text-[16px]'>Secure & Reliable</p>
+                <p className='text-[12px]'>Your data is protected</p>
+              </div>
+            </div>
+            <div className='flex items-center gap-[9px] text-white'>
+              <img src='assets/shield-check.png' alt='shield' />
+              <div className='text-center md:text-left'>
+                <p className='text-[16px]'>Secure & Reliable</p>
+                <p className='text-[12px]'>Your data is protected</p>
+              </div>
+            </div>
           </div>
         </div>
 
