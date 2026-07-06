@@ -81,7 +81,7 @@ const TwoFactor = () => {
             <p className='font-normal text-[14px] mb-2 text-black text-left'>
               Verification Code
             </p>
-            {/* ইনপুট বক্সের সাইজ ছোট করা হয়েছে যেন এক লাইনে থাকে */}
+
             <div className='flex flex-wrap gap-1 md:gap-2 justify-center'>
               {[...Array(6)].map((_, i) => (
                 <input
@@ -92,6 +92,7 @@ const TwoFactor = () => {
                 />
               ))}
             </div>
+
             <div className='flex justify-center items-center gap-2 text-green-800 font-medium my-4'>
               <span>🕒 Code will expire in 02:45</span>
             </div>
@@ -107,7 +108,7 @@ const TwoFactor = () => {
                   defaultValue='saadi@jamunatech.com'
                 />
               </label>
-              <button className='text-green-700 font-semibold whitespace-nowrap self-end sm:self-center'>
+              <button className='text-green-700 font-semibold whitespace-nowrap self-end sm:self-center cursor-pointer'>
                 Resend
               </button>
             </div>
@@ -121,25 +122,27 @@ const TwoFactor = () => {
                   defaultValue='+880 1712 345 678'
                 />
               </label>
-              <button className='text-green-700 font-semibold whitespace-nowrap self-end sm:self-center'>
+              <button className='text-green-700 font-semibold whitespace-nowrap self-end sm:self-center cursor-pointer'>
                 Resend
               </button>
             </div>
           </div>
 
           <div className='flex flex-col gap-4 mt-8'>
-            <button className='bg-green-800 text-white py-3 rounded-lg font-semibold hover:bg-green-900 transition'>
+            <button className='bg-green-800 text-white py-3 rounded-lg font-semibold hover:bg-green-900 transition cursor-pointer'>
               Verify & Continue
             </button>
+
             <NavLink
               to='/login'
-              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 bg-green-900 text-white transition'
+              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 bg-green-900 text-white transition cursor-pointer'
             >
               ← Back to Login
             </NavLink>
+
             <NavLink
               to='/'
-              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 bg-blue-700 text-white transition'
+              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 bg-blue-700 text-white transition cursor-pointer'
             >
               ← Back to Home
             </NavLink>
