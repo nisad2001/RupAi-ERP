@@ -64,7 +64,12 @@ const TwoFactor = () => {
 
       {/* Right side */}
       <div className='md:col-span-5 flex items-center justify-center p-8'>
-        <p>Right side content here</p>
+        <NavLink
+          to='/'
+          className='mt-4 bg-green-900 p-2 rounded-sm text-white cursor-pointer'
+        >
+          back to home
+        </NavLink>
       </div>
     </div>
   );
