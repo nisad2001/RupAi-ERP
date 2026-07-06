@@ -39,7 +39,6 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Responsive Grid Static */}
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center xl:justify-items-start gap-x-4 gap-y-[48px] px-6 md:ml-0 xl:ml-[112px] md:px-0 mb-[40px] md:mb-[60px] mx-auto xl:mx-0'>
               <div className='flex flex-col items-center w-[131px]'>
                 <img
@@ -149,21 +148,21 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right side - Login Form */}
-        <div className='col-span-5 w-full block px-6 md:px-8 pb-10'>
-          <div className='flex flex-col items-center text-center mt-[60px] md:mt-[110px] mb-8'>
-            <div className='w-[100px] h-[100px] md:w-[129px] md:h-[129px] rounded-full border-[0.86px] border-[#AEAEAE] overflow-hidden flex items-center justify-center text-center mb-[20px]'>
+        {/* Right side */}
+        <div className='col-span-12 md:col-span-5 w-full px-4 md:px-8 pb-10 flex flex-col items-center'>
+          <div className='flex flex-col items-center text-center mt-[40px] md:mt-[110px] mb-8'>
+            <div className='w-[90px] h-[90px] md:w-[129px] md:h-[129px] rounded-full border-[0.86px] border-[#AEAEAE] overflow-hidden flex items-center justify-center text-center mb-[20px]'>
               <img
                 src='/assets/home-right-leaf.png'
                 alt='Profile'
-                className='w-[60px] h-[60px] md:w-[82px] md:h-[82px] object-cover'
+                className='w-[50px] h-[50px] md:w-[82px] md:h-[82px] object-cover'
               />
             </div>
             <div>
-              <h1 className='font-semibold text-[#06470E] text-[24px] md:text-[32px] leading-[100%] tracking-[0] mb-[9px]'>
+              <h1 className='font-semibold text-[#06470E] text-[22px] md:text-[32px] leading-[100%] tracking-[0] mb-[9px]'>
                 Welcome Back!
               </h1>
-              <p className='text-black font-normal text-[16px] md:text-[18px] leading-[100%] tracking-[0]'>
+              <p className='text-black font-normal text-[14px] md:text-[18px] leading-[100%] tracking-[0]'>
                 Sign in to your <span className='text-[#06470E]'>RupAI</span>{" "}
                 ERP account
               </p>
@@ -172,10 +171,10 @@ const Home = () => {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className='w-full max-w-[463px] mx-auto'
+            className='w-full max-w-[463px]'
           >
             <div className='mb-6'>
-              <label className='block font-bold text-[20px] leading-[100%] tracking-[0] mb-[14px]'>
+              <label className='block font-bold text-[18px] md:text-[20px] leading-[100%] tracking-[0] mb-[14px]'>
                 Username/E-mail
               </label>
               <input
@@ -226,6 +225,58 @@ const Home = () => {
             >
               <PiSignIn size={20} /> Sign In
             </button>
+            <p className='font-normal text-base leading-none tracking-normal text-[#3D3B3B] text-center mt-[22px]'>
+              or sign in with
+            </p>
+
+            <div className='flex flex-wrap justify-center mt-[29px] mb-[26px] gap-x-4 gap-y-4'>
+              <div className='w-[142px] h-[116px] rounded-[9px] border border-[#CDCDCD] p-[10px] flex flex-col gap-[10px] items-center justify-center'>
+                <button type='button'>
+                  <img
+                    className='w-[31px] h-[34px]'
+                    src='/assets/google-btn.png'
+                    alt='google'
+                  />
+                </button>
+                <p className='font-normal text-[14px] text-[#3D3B3B]'>google</p>
+              </div>
+              <div className='w-[142px] h-[116px] rounded-[9px] border border-[#CDCDCD] p-[10px] flex flex-col gap-[10px] items-center justify-center'>
+                <button type='button'>
+                  <img
+                    className='w-[31px] h-[34px]'
+                    src='/assets/microsoft-btn.png'
+                    alt='microsoft'
+                  />
+                </button>
+                <p className='font-normal text-[14px] text-[#3D3B3B]'>
+                  microsoft
+                </p>
+              </div>
+              <div className='w-[142px] h-[116px] rounded-[9px] border border-[#CDCDCD] p-[10px] flex flex-col gap-[10px] items-center justify-center'>
+                <button type='button'>
+                  <img
+                    className='w-[31px] h-[34px]'
+                    src='/assets/sso-btn.png'
+                    alt='sso'
+                  />
+                </button>
+                <p className='font-normal text-[14px] text-[#3D3B3B]'>SSO</p>
+              </div>
+            </div>
+
+            <div className='flex justify-center w-full mt-9'>
+              <div className='flex items-center gap-2'>
+                <p className='flex items-center gap-1 font-normal text-[14px] md:text-[16px] leading-[100%] text-[#3D3B3B]'>
+                  Ⓒ 2026
+                  <img
+                    src='/assets/RupAI.png'
+                    alt='RupAI'
+                    className='h-3 md:h-4 w-auto inline-block'
+                  />
+                  ERP All rights reserved.
+                </p>
+              </div>
+            </div>
           </form>
         </div>
       </div>
