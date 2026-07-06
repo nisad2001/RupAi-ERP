@@ -78,7 +78,7 @@ const TwoFactor = () => {
           </div>
 
           <div className='mb-6 text-center'>
-            <p className='font-normal text-[14px] mb-2 text-black text-left'>
+            <p className='font-normal text-[14px] mb-2 text-black text-center md:text-left '>
               Verification Code
             </p>
 
@@ -88,7 +88,7 @@ const TwoFactor = () => {
                   key={i}
                   type='text'
                   maxLength='1'
-                  className='w-9 h-10 md:w-14 md:h-16 border border-gray-300 rounded-lg text-center text-xl focus:border-green-600 outline-none'
+                  className='w-9 h-10 md:w-17 md:h-18 border border-gray-300 rounded-lg text-center text-xl focus:border-green-600 outline-none'
                 />
               ))}
             </div>
