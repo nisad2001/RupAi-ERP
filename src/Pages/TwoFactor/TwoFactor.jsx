@@ -133,9 +133,15 @@ const TwoFactor = () => {
             </button>
             <NavLink
               to='/login'
-              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 hover:bg-gray-50 transition'
+              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 bg-green-900 text-white transition'
             >
               ← Back to Login
+            </NavLink>
+            <NavLink
+              to='/'
+              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 bg-blue-700 text-white transition'
+            >
+              ← Back to Home
             </NavLink>
           </div>
         </div>

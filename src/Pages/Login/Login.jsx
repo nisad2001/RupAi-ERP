@@ -26,10 +26,10 @@ const Login = () => {
           className="min-h-screen bg-[url('assets/home-img.png')] bg-cover bg-center bg-no-repeat md:col-span-7 flex flex-col justify-between pt-8 md:pt-0"
           style={{ backgroundImage: "url('/assets/home-img.png')" }}
         >
-          <div className='flex flex-col items-center text-center md:items-start md:text-left'>
+          <div className='flex flex-col items-center text-center md:items-start md:text-left '>
             <div className='mt-4 md:mt-12 ml-0 md:ml-24'>
               <NavLink to='/'>
-                <img src='assets/Rupai-logo.png' alt='Logo' />
+                <img src='assets/Rupai-logo.png' alt='Logo ' />
               </NavLink>
 
               <p className='font-normal not-italic text-[14px] leading-[100%] text-[#1E1E1E]'>
@@ -52,7 +52,7 @@ const Login = () => {
               </p>
             </div>
 
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center xl:justify-items-start gap-x-4 gap-y-[48px] px-6 md:ml-0 xl:ml-[112px] md:px-0 mb-[40px] md:mb-[60px] mx-auto xl:mx-0'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center xl:justify-items-start gap-x-4 gap-y-[48px] px-6 md:ml-0 xl:ml-[112px] md:px-0 mb-[40px] md:mb-[60px] mx-auto xl:mx-0 cursor-pointer'>
               <div className='flex flex-col items-center w-[131px]'>
                 <img
                   src='assets/leaf1.png'
@@ -187,23 +187,6 @@ const Login = () => {
         {/* Right side */}
 
         <div className='col-span-12 md:col-span-5 w-full px-4 md:px-8 pb-10 flex flex-col items-center bg-base-100 shadow-sm '>
-          <div className='space-x-2 mt-4 flex '>
-            <NavLink
-              to='/'
-              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 hover:bg-gray-50 transition p-8 hover:bg-green-900 hover:text-white'
-            >
-              ← go to home
-            </NavLink>
-
-            <NavLink
-              to='/two-factor'
-              className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2 hover:bg-gray-50 transition p-8 hover:bg-green-900 hover:text-white'
-            >
-              got to two-factor
-              <GoArrowRight />
-            </NavLink>
-          </div>
-
           <div className='flex flex-col items-center text-center mt-[20px] md:mt-[110px] mb-8'>
             <div className='w-[90px] h-[90px] md:w-[129px] md:h-[129px] rounded-full border-[0.86px] border-[#AEAEAE] overflow-hidden flex items-center justify-center text-center mb-[20px]'>
               <img
@@ -279,18 +262,19 @@ const Login = () => {
               </a>
             </div>
 
-            <button
+            <NavLink
+              to='/two-factor'
               type='submit'
-              className='w-full bg-[#06470D] text-white py-4 rounded-lg font-semibold text-[18px] hover:bg-[#043309] transition flex items-center justify-center gap-2'
+              className='w-full bg-[#06470D] text-white py-4 rounded-lg font-semibold text-[18px] hover:bg-[#043309] transition flex items-center justify-center gap-2 cursor-pointer'
             >
               <PiSignIn size={20} /> Sign In
-            </button>
+            </NavLink>
 
             <p className='font-normal text-base leading-none tracking-normal text-[#3D3B3B] text-center mt-[22px]'>
               or sign in with
             </p>
 
-            <div className='flex flex-wrap justify-center mt-[29px] mb-[26px] gap-x-4 gap-y-4'>
+            <div className='flex flex-wrap justify-center mt-[29px] mb-[26px] gap-x-4 gap-y-4 cursor-pointer'>
               <div className='w-[142px] h-[116px] rounded-[9px] border border-[#CDCDCD] p-[10px] flex flex-col gap-[10px] items-center justify-center'>
                 <button type='button'>
                   <img
@@ -310,7 +294,6 @@ const Login = () => {
                     src='/assets/microsoft-btn.png'
                     alt='microsoft'
                   />
-                  theke mt nibe 40px
                 </button>
 
                 <p className='font-normal text-[14px] text-[#3D3B3B]'>
@@ -330,7 +313,22 @@ const Login = () => {
                 <p className='font-normal text-[14px] text-[#3D3B3B]'>SSO</p>
               </div>
             </div>
+            <div className='space-x-2 mt-4 flex '>
+              <NavLink
+                to='/'
+                className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2  transition p-8 bg-blue-800 text-white'
+              >
+                ← Back to Home
+              </NavLink>
 
+              <NavLink
+                to='/two-factor'
+                className='border border-gray-300 py-3 rounded-lg font-semibold flex justify-center items-center gap-2  transition p-8 bg-green-900 text-white'
+              >
+                Authentication
+                <GoArrowRight />
+              </NavLink>
+            </div>
             <div className='flex justify-center w-full mt-9'>
               <div className='flex items-center gap-2'>
                 <p className='flex items-center gap-1 font-normal text-[14px] md:text-[16px] leading-[100%] text-[#3D3B3B]'>

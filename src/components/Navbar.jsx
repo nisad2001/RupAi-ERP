@@ -7,26 +7,14 @@ const Navbar = () => {
         <NavLink
           to='/login'
           end
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-900 font-bold border-b-4 pb-4 border-b-green-900"
-              : ""
+          className={
+            ({ isActive }) =>
+              isActive
+                ? "text-green-900 font-bold border-b-4 pb-4 border-b-green-900 bg-transparent" // Active state
+                : "bg-green-900 text-white hover:bg-green-800 rounded-md px-4 py-2 uppercase" // Normal state
           }
         >
           Log in
-        </NavLink>
-      </li>
-
-      <li>
-        <NavLink
-          to='/two-factor'
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-900 font-bold border-b-4 pb-4 border-b-green-900"
-              : ""
-          }
-        >
-          Two Factor
         </NavLink>
       </li>
     </>
@@ -53,34 +41,23 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <img src='/assets/Rupai-logo.png' alt='' />
+            <img src='/assets/Rupai-logo.png' alt='Logo' className='h-10' />
             <ul
               tabIndex={0}
-              className='menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow uppercase'
+              className='menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow'
             >
               {nav}
             </ul>
           </div>
         </div>
 
-        <div className='navbar-end hidden lg:flex '>
-          <ul className='menu menu-horizontal px-1 uppercase'>{nav}</ul>
-        </div>
-
-        {/* <div className='navbar-end '>
-          <NavLink
-            to='/book'
-            className='btn uppercase rounded-md bg-green-900 text-white border-none hover:bg-green-800 transform hover:scale-105 active:scale-95 transition-all duration-200 shadow-sm'
-          >
-            Log in
-          </NavLink>
-          <NavLink
-            to='/book'
-            className='btn uppercase rounded-md bg-green-900 text-white border-none hover:bg-green-800 transform hover:scale-105 active:scale-95 transition-all duration-200 shadow-sm'
-          >
-            Two Factor
-          </NavLink>
+        {/* <div className='navbar-center hidden lg:flex'>
+          <img src='/assets/Rupai-logo.png' alt='Logo' className='h-12' />
         </div> */}
+
+        <div className='navbar-end hidden lg:flex'>
+          <ul className='menu menu-horizontal px-1 gap-2'>{nav}</ul>
+        </div>
       </div>
     </div>
   );
