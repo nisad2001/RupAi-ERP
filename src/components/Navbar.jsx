@@ -7,11 +7,10 @@ const Navbar = () => {
         <NavLink
           to='/login'
           end
-          className={
-            ({ isActive }) =>
-              isActive
-                ? "text-green-900 font-bold border-b-4 pb-4 border-b-green-900 bg-transparent" // Active state
-                : "bg-green-900 text-white hover:bg-green-800 rounded-md px-4 py-2 uppercase" // Normal state
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-900 font-bold border-b-4 pb-4 border-b-green-900 bg-transparent"
+              : "bg-green-900 text-white hover:bg-green-800 rounded-md px-4 py-2 uppercase"
           }
         >
           Log in
@@ -41,7 +40,6 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <img src='/assets/Rupai-logo.png' alt='Logo' className='h-10' />
             <ul
               tabIndex={0}
               className='menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow'
@@ -49,13 +47,10 @@ const Navbar = () => {
               {nav}
             </ul>
           </div>
+          <img src='/assets/Rupai-logo.png' alt='Logo' className='h-10 ml-2' />
         </div>
 
-        {/* <div className='navbar-center hidden lg:flex'>
-          <img src='/assets/Rupai-logo.png' alt='Logo' className='h-12' />
-        </div> */}
-
-        <div className='navbar-end hidden lg:flex'>
+        <div className='navbar-end'>
           <ul className='menu menu-horizontal px-1 gap-2'>{nav}</ul>
         </div>
       </div>
